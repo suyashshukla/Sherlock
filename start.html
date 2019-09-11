@@ -7,39 +7,13 @@
 
 </head>
 
-<script>
-
-function openNav(){
-    document.getElementById("mysidenav").style.width = "250px";
-}
-
-function closeNav(){
-    document.getElementById("mysidenav").style.width = "0px";
-}
-
-var slide = 1;
-
-showSlides(slide);
-
-function showSlides(n){
-
-var slide = document.getElementsByClassName("mySlides");
-
-for(var i = 0;i<slides.length;i++){
-    slides[i].style.display="none";
-}
-
-slide[n-1].style.display="block";
-
-}
-
-</script>
-
 <body>
 
 <div id="mysidenav" class="sidenav">
 
-<p style="text-align: center"><img src="https://image4.owler.com/logo/keka_owler_20170711_082052_original.jpg" height="72px" width="72px" class="center" style="border-radius: 50px"></p>
+<p style="text-align: center">
+    <img src="https://image4.owler.com/logo/keka_owler_20170711_082052_original.jpg" height="72px" width="72px" class="center" style="border-radius: 50px">
+</p>
 
 
 <a href="javascript:void(0)" class="closebtn" onclick=closeNav()>&times;</a>
@@ -63,26 +37,73 @@ slide[n-1].style.display="block";
 <div class="slideshow-container">
 
 <div  class="mySlides fade">
-<img class="img img1" src="http://images1.fanpop.com/images/photos/2600000/HQ-France-wallpapers-france-2627157-1600-1200.jpg" style="width:100%">
+<img class="img slide" src="http://images1.fanpop.com/images/photos/2600000/HQ-France-wallpapers-france-2627157-1600-1200.jpg" height="850px" style="width: 100%">
 </div>
 
 <div  class="mySlides fade">
-        <img src="https://s1.1zoom.me/big0/720/358467-svetik.jpg" style="width:100%">
+        <img class = "img slide" src="https://s1.1zoom.me/big0/720/358467-svetik.jpg"height="850px" style="width: 100%">
     </div>
 
     <div  class="mySlides fade">
-        <img src="https://www.zastavki.com/pictures/2560x1600/2011/Nature_Seasons_Summer_Forest_river_HQ_photo_030447_.jpg" style="width:100%">
+        <img class = "img slide" src="https://www.zastavki.com/pictures/2560x1600/2011/Nature_Seasons_Summer_Forest_river_HQ_photo_030447_.jpg" height="850px" style="width: 100%">
     </div>
 
-</div>
+    
+
+<a class="prev" onclick="plus(-1)">&#10094</a>
+<a class="next" onclick="plus(1)">&#10095</a>
 
 </div>
-
-
-
-
+<br>
 
 </div>
+
+
+<script>
+    var slideIndex = 1;
+    
+    showSlides(slideIndex);
+
+  function plus(inc){
+      slideIndex = (slideIndex+inc);
+
+if(slideIndex>3){
+  slideIndex = 1;  
+}
+
+if(slideIndex<1){
+    slideIndex = 3;
+}
+
+        showSlides(slideIndex);
+    }
+
+function openNav(){
+    document.getElementById("mysidenav").style.width = "250px";
+}
+
+function closeNav(){
+    document.getElementById("mysidenav").style.width = "0px";
+}
+
+function showSlides(n){
+
+    slideIndex = n;
+
+    
+
+var slide = document.getElementsByClassName("mySlides");
+
+
+for(var i = 0;i<slide.length;i++){
+    slide[i].style.display = "none";
+}
+
+slide[slideIndex-1].style.display = "block";
+
+}
+
+</script>
 
     </body>
 
