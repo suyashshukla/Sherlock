@@ -17,6 +17,22 @@ function closeNav(){
     document.getElementById("mysidenav").style.width = "0px";
 }
 
+var slide = 1;
+
+showSlides(slide);
+
+function showSlides(n){
+
+var slide = document.getElementsByClassName("mySlides");
+
+for(var i = 0;i<slides.length;i++){
+    slides[i].style.display="none";
+}
+
+slide[n-1].style.display="block";
+
+}
+
 </script>
 
 <body>
