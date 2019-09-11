@@ -56,25 +56,49 @@
 </div>
 <br>
 
+<div style="text-align: center">
+
+<span style="padding: 10px" class="flip" >
+    <div class="flip-inner">
+        <div class="flip-front">
+            <img src="https://image.flaticon.com/icons/png/512/124/124010.png" height="100px" width="100px" style="border-radius: 10px">
+        </div>
+            <div class="flip-back">Facebook</div>
+        </div>
+</span>
+
+    <span style="padding: 10px" class="flip">
+        <div class="flip-inner">
+            <div class="flip-front">
+                <img src="https://pbs.twimg.com/profile_images/941740837985234947/VkTVzOnD.jpg" height="100px" width="100px" style="border-radius: 10px">
+            </div>
+            <div class="flip-back">Twitter</div>
+        </div>
+    </span>
+
+    <span style="padding: 10px" class="flip">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" height="100px" width="100px"> 
+                </div>
+            <div class="flip-back">
+                Linkedin
+                </div>
+            </div>
+    </span>
+
 </div>
 
+</div>
 
 <script>
-    var slideIndex = 1;
+
+var slideIndex = 1;
     
     showSlides(slideIndex);
 
   function plus(inc){
       slideIndex = (slideIndex+inc);
-
-if(slideIndex>3){
-  slideIndex = 1;  
-}
-
-if(slideIndex<1){
-    slideIndex = 3;
-}
-
         showSlides(slideIndex);
     }
 
@@ -90,6 +114,13 @@ function showSlides(n){
 
     slideIndex = n;
 
+    if(slideIndex>3){
+  slideIndex = 1;  
+}
+
+if(slideIndex<1){
+    slideIndex = 3;
+}
     
 
 var slide = document.getElementsByClassName("mySlides");
@@ -100,6 +131,26 @@ for(var i = 0;i<slide.length;i++){
 }
 
 slide[slideIndex-1].style.display = "block";
+
+}
+
+function showSlides(){
+
+var slides = document.getElementsByClassName("mySlides");
+
+slideIndex++;
+
+if(slideIndex>3){
+  slideIndex = 1;  
+}
+
+for(i = 0;i<slides.length;i++){
+    slides[i].style.display = "none";
+}
+
+slides[slideIndex-1].style.display = "block";
+
+setTimeout(showSlides,2000);
 
 }
 
