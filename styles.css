@@ -1,223 +1,270 @@
-  .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed; 
-    z-index: 1;
-    top: 0; 
-    left: 0;
-    background-color:#323334;
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    transition: 0.5s; 
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #323334;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav a {
+  color: white;
+  padding: 25px;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#data {
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+
+.topNav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #323334;
+  color: #323334;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.topNav a {
+  font-size: 16px;
+}
+
+.topNav a:link,
+.sidenav a:link {
+  color: aliceblue;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.topNav a:visited,
+.sideNav a:visited {
+  color: aliceblue;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.sideNav a:hover {
+  color: grey;
+}
+
+.topNav a:hover {
+  padding: 15px;
+  color: #323334;
+  background-color: aliceblue;
+}
+
+.button {
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.mySlides {
+  display: block;
+  width: 100%;
+  outline-offset: 10px;
+  margin: 10px;
+}
+
+.slideshow-container {
+  height: 850px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  top: 50%;
+  padding: 16px;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: -100px;
+}
+
+.next {
+  right: 0;
+}
+
+.slide {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  animation-name: fade;
+}
+
+.flip {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-inner {
+  text-align: center;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-front .flip-back {
+  position: absolute;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.page-header {
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.page-header:hover {
+  background-color: #323334;
+  color: white;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
   }
-
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  to {
+    opacity: 1;
   }
+}
 
-  .sidenav a{
-      color: white;
-      padding: 25px;
-      display: block;
-      text-decoration: none;
-      font-size: 20px;
+@keyframes fade {
+  from {
+    opacity: 0.4;
   }
-
-  #data{
-    font-variant: small-caps;
-    letter-spacing: 2px;
-
+  to {
+    opacity: 1;
   }
+}
 
+.social {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+}
 
-  .topNav{
-      padding-top: 15px;
-      padding-bottom: 15px;
-      background-color: #323334;
-      color: #323334;
-      overflow: hidden;
-      width: 100%;
+.social:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
   }
-
-  .topNav a{
-    font-size: 16px;
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
   }
-
-  .topNav a:link{
-      color: aliceblue;
-      padding:15px;
-      text-decoration: none
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
   }
-
-
-    .topNav a:visited{
-      color: aliceblue;
-      padding:15px;
-      text-decoration: none
-    }
-
-    
-  .topNav a:hover{
-    padding: 15px;
-      color: #323334;
-      background-color: aliceblue;
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
   }
-
-  .button{
-      border-radius: 15px;
-      padding: 5px;
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
   }
-
-  .mySlides{
-    display: block;
-    width: 100%;
-    outline-offset: 10px;
-    margin: 10px;
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
   }
-
-  .slideshow-container{
-    height: 850px;
-    position: relative;
-    margin: auto;
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
   }
-
-  .prev,.next{
-    top: 50%;
-    padding: 16px;
-    position: absolute;
-    color: white;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: -100px;
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
   }
- 
-  .next{
-    right: 0;
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
   }
-
-  .slide{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
   }
-
-  .fade{
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2.5s;
-    animation-duration: 2.5s;
-    animation-name: fade;
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
+}
 
-  .flip{
-    background-color: transparent;
-    perspective: 1000px;
-  }
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 
-  .flip:hover .flip-inner{
-    transform: rotateY(180deg);
-  }
+.menu {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  height: max-content;
+}
 
-  .flip-inner{
-    text-align: center;
-    transition: 0.8s;
-    transform-style: preserve-3d;
-  }
+.menu a {
+  cursor: pointer;
+  padding: 10px;
+}
 
-  .flip-front .flip-back{
-    position: absolute;
-    text-align: center;
-    backface-visibility: hidden;
-  }
+.card {
+  width: 200px;
+  margin: auto;
+}
 
-  .page-header{
-    cursor: pointer;
-    border-radius: 15px;
-  }
+.card-header,
+.card-body,
+.card-footer {
+  margin: auto;
+  background-color: transparent;
+}
 
-  .page-header:hover{
-    background-color: #323334;
-    color : white;
-  }
+.footer {
+  margin-top: 10px;
+}
 
-  .card{
-    display: flex;
-    justify-content: center;
-  }
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
-  @-webkit-keyframes fade{
-    from{opacity: .4;}
-    to{opacity: 1;}
-  }
+.dropdown{
+  position: absolute;
+  background-color : #323334;
+}
 
-  @keyframes fade{
-    from{opacity: .4;}
-    to{opacity: 1;}
-  }
-
-  .social{
-    height : 100px;
-    width: 100px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 25px;
-  }
-
-  .social:hover{
-    animation: shake 0.5s;
-  }
-
-  @keyframes shake{
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-
-  .icons{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  .menu{
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    height: max-content;
-  }
-
-  .menu a{
-    cursor: pointer;
-    padding: 10px; 
-  }
-
-  .card{
-    width: 200px;
-    margin: auto;
-  }
-
-  .card-header, .card-body, .card-footer{
-    margin : auto;
-    background-color: transparent
-  }
-
-  .footer{
-    margin-top : 10px;
-  }
+.tasks{
+  position: relative;
+}
 
 
 
-  body{
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
