@@ -1,68 +1,82 @@
 <html>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
+
     <title>Task 1</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+
 </head>
 
 <style>
-    
+    @font-face {
+        font-family: Ebrima;
+        src: url("ebrimabd.ttf");
+    }
+
+    @font-face {
+        font-family: Gothic;
+        src: url("GOTHIC.ttf");
+    }
+
     body {
+        margin: 0px;
         font-family: 'Roboto', sans-serif;
     }
 
     .header {
         background-color: #3399CC;
+        font-family: Gothic;
+        height: 120px;
+    }
+
+    .header-text {
         color: white;
-        letter-spacing: 1px;
-        line-height: 100px;
-        font-size: 48px;
-        font-family: 'Questrial', sans-serif;
+        font-size: 40px;
         padding-left: 20px;
-        height: 100px;
-        margin: -10px;
+        padding-top: 40px;
     }
 
     .nav-pane {
+        padding: 10px 0 10px 20px;
         background-color: #323334;
-        margin-left: -10px;
-        margin-right: -10px;
-        padding: 10px;
     }
 
-    .nav-pane a {
-        letter-spacing: -.5px;
-        line-height: 16px;
-        font-family: 'Lato', sans-serif;
+    .nav-pane ul li {
+        font-family: Ebrima;
         color: white;
-        font-weight: bold;
-        padding: 10px;
+        padding-right: 10px;
+        font-size: 14px;
         text-decoration: none;
+        display: inline;
     }
+
+    .nav-pane ul {
+        display: inline;
+    }
+
 
     .nav-pane img {
         cursor: pointer;
+        right: 0;
         position: absolute;
-        right: 2%;
-        top: 95px;
+        height: 24px;
+        width: 24px;
+        padding-right: 25px;
     }
 
-    .nav-pane a:hover {
-        color: gray;
-    }
 
     .news {
+        display: inline-block;
         margin: 18px 48px 0px 48px;
         padding: 12px;
-        display: inline-block;
         border: solid 1px #D3D3D3;
     }
 
-    .news-head {
-        font-size: 20px;
+    .news-header {
+        font-size: 18px;
     }
 
     ul {
@@ -74,9 +88,8 @@
     .bullets {
         font-size: 14px;
         padding: 10px;
-        color: #505050;
+        color: #303030;
         padding-left: 10px;
-        list-style-position: outside;
         list-style-type: none;
     }
 
@@ -85,45 +98,46 @@
     }
 
     .text {
-        margin-left: 48px;
-        margin-top: 24px;
-        margin-right: 96px;
+        margin: 24px 220px 0 48px;
     }
 
-    .text-head {
+    .text-header {
         font-size: 18px;
-        font-weight: bold;
     }
 
     .text-content {
-        line-height: 125%;
         font-size: 14px;
         color: #303030;
-        text-align: justify;
     }
-
 </style>
 
 <body>
 
+
+
     <!--Header starts-->
-
-    <div class="header">TECHNOVERT</div>
-
+    <div class="header">
+        <div class="header-text">TECHNOVERT</div>
+    </div>
     <!--Header ends-->
 
 
-    
+
 
     <!--Navigation Pane starts-->
 
     <div class="nav-pane">
 
-        <a href="index.html">HOME</a>
-        <a href="#services">SERVICES</a>
-        <a href="#careers">CAREERS</a>
-        <a href="#contact">CONTACT</a>
-        <img src="C:\Users\suyash.s\Desktop\Sherlock\blog-icon.png">
+        <ul>
+            <li>HOME</li>
+            <li>SERVICES</li>
+            <li>CAREERS</li>
+            <li>CONTACT</li>
+        </ul>
+
+                <img src="C:\Users\suyash.s\Desktop\Sherlock\blog-icon.png">
+           
+      
 
     </div>
 
@@ -137,7 +151,7 @@
     <!--News Section Starts-->
 
     <div class="news">
-        <div class="news-head">NEWS</div>
+        <div class="news-header">NEWS</div>
         <ul>
             <li class="bullets">&nbsp;&nbsp;&nbsp;Technovert is now Microsoft Partner in Network Security Solutions.
             </li>
@@ -155,14 +169,16 @@
 
 
 
-
     <!--Text Section Starts-->
 
     <div class="text">
 
-        <div class="text-head">Welcome!</div>
+        <div class="text-header">Welcome!</div>
+
+
         <div class="text-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
                 Imperdiet proin fermentum leo vel orci porta non. Aenean pharetra magna ac placerat vestibulum lectus
                 mauris ultrices eros.
@@ -170,8 +186,7 @@
                 Enim ut sem viverra aliquet eget sit amet.
                 Tincidunt dui ut ornare lectus sit amet est placerat in. Sed vulputate odio ut enim blandit volutpat
                 maecenas. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
-                Vitae tempus quam pellentesque nec nam. Scelerisque felis imperdiet proin fermentum. Viverra aliquet
-                eget sit amet tellus. Dui id ornare arcu odio ut sem nulla pharetra diam.
+            </p>
 
             <p>
                 Non nisi est sit amet facilisis magna etiam tempor orci.
@@ -199,7 +214,6 @@
     </div>
 
     <!--Text Section ends-->
-
 
 
 </body>

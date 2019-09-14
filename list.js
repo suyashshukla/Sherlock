@@ -1,7 +1,11 @@
 console.log("entered");
 
-$(".tasks").hover(function (){
-    $(".dropdown").style.display="block";
+var tasks = document.getElementsByClassName("tasks");
+
+tasks.onClick(function(){
+    var dropdown = document.getElementsByClassName("dropdown");
+    dropdown.style.display = "block";
+    console.log("hello");
 });
 
 var slideIndex = 1;

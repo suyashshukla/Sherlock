@@ -37,7 +37,6 @@
   padding-bottom: 15px;
   background-color: #323334;
   color: #323334;
-  overflow: hidden;
   position: relative;
   width: 100%;
 }
@@ -258,13 +257,14 @@ body {
 }
 
 .dropdown{
+  display: none;
   position: absolute;
-  background-color : #323334;
+  background-color: aquamarine;
 }
 
-.tasks{
-  position: relative;
-}
+
+
+
 
 
 
