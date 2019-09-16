@@ -39,3 +39,7 @@
     line-height: 20px;
     font-size: 14px;
 }
+
+.info-content-list li{
+    padding: 2px;
+}
