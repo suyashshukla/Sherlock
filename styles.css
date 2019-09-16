@@ -262,6 +262,10 @@ body {
   background-color: aquamarine;
 }
 
+.task-container{
+  display: inline-block;
+}
+
 
 
 

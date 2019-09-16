@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>
+        Kavyastrot
+    </title>
+</head>
+
+<body>
+
+    <button onclick="loadData()">Click Me!</button>
+
+    <p></p>
+
+
+
+
+
+    <script>
+
+        function loadData(){
+            var http = XMLHttpRequest();
+
+            fetch("https://www.googleapis.com/blogger/v3/blogs/1207806558163186871?key=AIzaSyD8oO2Jpe2kIopyhniJCVBKSNQHXWNbaWE")
+            .then(function(response){
+                Console.log(reponse.JSON);
+            });
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

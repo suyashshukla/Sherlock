@@ -29,44 +29,50 @@
     .header {
         background-color: #3399CC;
         font-family: Gothic;
-        height: 120px;
+        height: 112px;
     }
 
     .header-text {
         color: white;
-        font-size: 40px;
-        padding-left: 20px;
-        padding-top: 40px;
+        font-size: 48px;
+        padding: 27px 0 27px 20px;
     }
 
+
     .nav-pane {
-        padding: 10px 0 10px 20px;
         background-color: #323334;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .image {
+        margin-right: 25px;
+        flex-grow: 1;
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .image img {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
     }
 
     .nav-pane ul li {
         font-family: Ebrima;
         color: white;
-        padding-right: 10px;
+        padding: 10px;
         font-size: 14px;
-        text-decoration: none;
         display: inline;
     }
 
     .nav-pane ul {
-        display: inline;
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 0;
     }
-
-
-    .nav-pane img {
-        cursor: pointer;
-        right: 0;
-        position: absolute;
-        height: 24px;
-        width: 24px;
-        padding-right: 25px;
-    }
-
 
     .news {
         display: inline-block;
@@ -79,26 +85,26 @@
         font-size: 18px;
     }
 
-    ul {
-        padding: 0;
+    .points {
+        padding: 1px;
         color: #323334;
+        list-style-type: none;
         margin: 0;
     }
 
-    .bullets {
+    .points li {
         font-size: 14px;
-        padding: 10px;
+        padding: 10px 10px 10px 5px;
         color: #303030;
-        padding-left: 10px;
         list-style-type: none;
     }
 
-    .bullets::before {
+    .points li::before {
         content: '-';
     }
 
     .text {
-        margin: 24px 220px 0 48px;
+        margin: 24px 500px 0 48px;
     }
 
     .text-header {
@@ -135,9 +141,9 @@
             <li>CONTACT</li>
         </ul>
 
-                <img src="C:\Users\suyash.s\Desktop\Sherlock\blog-icon.png">
-           
-      
+        <div class="image">
+            <img src="C:\Users\suyash.s\Desktop\Sherlock\blog-icon.png">
+        </div>
 
     </div>
 
@@ -146,21 +152,18 @@
 
 
 
-
-
     <!--News Section Starts-->
-
     <div class="news">
         <div class="news-header">NEWS</div>
-        <ul>
-            <li class="bullets">&nbsp;&nbsp;&nbsp;Technovert is now Microsoft Partner in Network Security Solutions.
+        <ul class="points">
+            <li>&nbsp;&nbsp;&nbsp;Technovert is now Microsoft Partner in Network Security Solutions.
             </li>
-            <li class="bullets">&nbsp;&nbsp;&nbsp;We deliver one of the largest book information stores in the world.
+            <li>&nbsp;&nbsp;&nbsp;We deliver one of the largest book information stores in the world.
             </li>
-            <li class="bullets">&nbsp;&nbsp;&nbsp;Our team delievered the first Windows 8 metro style application for
+            <li>&nbsp;&nbsp;&nbsp;Our team delievered the first Windows 8 metro style application for
                 the Windows Phone
                 group at Microsoft.</li>
-            <li class="bullets">&nbsp;&nbsp;&nbsp;Technovert partner with Strategic technology CTO group.</li>
+            <li>&nbsp;&nbsp;&nbsp;Technovert partner with Strategic technology CTO group.</li>
         </ul>
     </div>
 
@@ -175,44 +178,44 @@
 
         <div class="text-header">Welcome!</div>
 
-
         <div class="text-content">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-                Imperdiet proin fermentum leo vel orci porta non. Aenean pharetra magna ac placerat vestibulum lectus
-                mauris ultrices eros.
-                Arcu felis bibendum ut tristique et egestas quis ipsum. Diam ut venenatis tellus in metus vulputate.
-                Enim ut sem viverra aliquet eget sit amet.
-                Tincidunt dui ut ornare lectus sit amet est placerat in. Sed vulputate odio ut enim blandit volutpat
-                maecenas. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl.
+                Lorem ipsum dolor sit amet, consectetut adipiscing elit.Mauris vulputate, felis venenatis tristique
+                pulvinar, felis arcu congue ante,
+                at dictum turpis metus ac risus. Nunc pulvinar enim eros, et interdum purus. Nam lacinia neque et
+                ipsum
+                sollicitudin vel laoreet diam laoreet.
+                Pellentesque tempus vulputate enim, quis vulputate purus tincidunt id. Nulla in nunc augue, at
+                ultricies
+                dui. Nullam accumsan lacus nec diam pretium non
+                dictum odio commodo. Nam blandit hendrerit iaculis. Ut sed posuere justo. Suspendisse potenti. In
+                scelerisque elementum nib hut tempor.
             </p>
 
             <p>
-                Non nisi est sit amet facilisis magna etiam tempor orci.
-                Ipsum dolor sit amet consectetur adipiscing.
-                Tempor id eu nisl nunc mi ipsum faucibus vitae aliquet.
-                Tellus at urna condimentum mattis pellentesque id nibh tortor.
-                Tortor at risus viverra adipiscing at in. Lectus sit amet est placerat in.
-                Vitae purus faucibus ornare suspendisse sed. Et tortor at risus viverra adipiscing at in tellus.
-                Odio ut sem nulla pharetra. Mi tempus imperdiet nulla malesuada pellentesque elit. Non sodales neque
-                sodales ut etiam.
+                Nam et interdum urna. Integer varius est et nunc sagittis volutpat et at dolor. Nam quam urna,
+                blandit
+                eget accumsan et, tincidunt quis dui. Integer rutrum lacinia dolor, eu eleifend lacus vulputate
+                vitae.
+                Suspendisse eros nibh, dignissim ut lobortis eu, ornare in augue. Duis ultrices aliquam nulla congue
+                rutrum. Quisque eu est vel dolor luctus condimentum nec sit amet orci. Ut lorem orci, ullamcorper in
+                fringilla eu, rutrum id lectus. Morbi sit amet enim erat, id lobortis justo.
             </p>
 
             <p>
-                Adipiscing elit pellentesque habitant morbi tristique senectus.
-                Magna eget est lorem ipsum dolor sit amet consectetur adipiscing.
-                Nunc sed blandit libero volutpat sed. Rhoncus dolor purus non enim praesent elementum facilisis.
-                Volutpat est velit egestas dui id. Eu augue ut lectus arcu bibendum at varius. Quis auctor elit sed
-                vulputate.
-                Ultrices in iaculis nunc sed augue lacus. Varius quam quisque id diam vel. Nibh ipsum consequat nisl
-                vel.
+                Morbi odio lacus, sagittis nec feugiat ac, gravida nec odio. Proin imperdiet ultrices nulla non
+                elementum. Nulla id molestie enim. Ut non felis ligula, vitae tempor urna. Maecenus lorem nibh,
+                ullamcorper eget convallis in, gravida vitae odio. Praesent at mauris dui. Atenean sodales ante
+                vitae mi
+                hendrerit eget malesuada tellus lobortis. Donec facilisis tincidunt ullamcorper. Duis sed orci at
+                risus
+                facilisis consectetur. Aenean nibh neque, blandit vel ullamcorper in, eleifend non ipsum. Curabitus
+                tincidunt.
             </p>
 
         </div>
 
     </div>
-
     <!--Text Section ends-->
 
 
