@@ -8,129 +8,20 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
 
+    <link href="content/styles/technovert-styles.css" type="text/css" rel="stylesheet">
+
+    <link href="content/favicon.png" type="image/png" rel="icon" sizes="24x24">
+
 </head>
 
-<style>
-    @font-face {
-        font-family: Ebrima;
-        src: url("ebrimabd.ttf");
-    }
-
-    @font-face {
-        font-family: Gothic;
-        src: url("GOTHIC.ttf");
-    }
-
-    body {
-        margin: 0px;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    .header {
-        background-color: #3399CC;
-        font-family: Gothic;
-        height: 112px;
-    }
-
-    .header-text {
-        color: white;
-        font-size: 48px;
-        padding: 27px 0 27px 20px;
-    }
-
-
-    .nav-pane {
-        background-color: #323334;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .image {
-        margin-right: 25px;
-        flex-grow: 1;
-        display: inline-flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .image img {
-        width: 24px;
-        height: 24px;
-        vertical-align: middle;
-    }
-
-    .nav-pane ul li {
-        font-family: Ebrima;
-        color: white;
-        padding: 10px;
-        font-size: 14px;
-        display: inline;
-    }
-
-    .nav-pane ul {
-        list-style-type: none;
-        display: inline-block;
-        padding: 10px;
-        margin: 0;
-    }
-
-    .news {
-        display: inline-block;
-        margin: 18px 48px 0px 48px;
-        padding: 12px;
-        border: solid 1px #D3D3D3;
-    }
-
-    .news-header {
-        font-size: 18px;
-    }
-
-    .points {
-        padding: 1px;
-        color: #323334;
-        list-style-type: none;
-        margin: 0;
-    }
-
-    .points li {
-        font-size: 14px;
-        padding: 10px 10px 10px 5px;
-        color: #303030;
-        list-style-type: none;
-    }
-
-    .points li::before {
-        content: '-';
-    }
-
-    .text {
-        margin: 24px 500px 0 48px;
-    }
-
-    .text-header {
-        font-size: 18px;
-    }
-
-    .text-content {
-        font-size: 14px;
-        color: #303030;
-    }
-</style>
 
 <body>
 
-
-
-    <!--Header starts-->
     <div class="header">
         <div class="header-text">TECHNOVERT</div>
     </div>
-    <!--Header ends-->
 
 
-
-
-    <!--Navigation Pane starts-->
 
     <div class="nav-pane">
 
@@ -141,21 +32,15 @@
             <li>CONTACT</li>
         </ul>
 
-        <div class="image">
-            <img src="C:\Users\suyash.s\Desktop\Sherlock\blog-icon.png">
+        <div class="nav-pane-image">
+            <img src="content\blog-icon.png">
         </div>
 
     </div>
 
-    <!--Navigation Pane ends-->
-
-
-
-
-    <!--News Section Starts-->
     <div class="news">
         <div class="news-header">NEWS</div>
-        <ul class="points">
+        <ul class="news-points">
             <li>&nbsp;&nbsp;&nbsp;Technovert is now Microsoft Partner in Network Security Solutions.
             </li>
             <li>&nbsp;&nbsp;&nbsp;We deliver one of the largest book information stores in the world.
@@ -167,12 +52,6 @@
         </ul>
     </div>
 
-    <!--News Section Ends-->
-
-
-
-
-    <!--Text Section Starts-->
 
     <div class="text">
 
@@ -216,8 +95,6 @@
         </div>
 
     </div>
-    <!--Text Section ends-->
-
 
 </body>
 

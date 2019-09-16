@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Ebrima;
+    src: url("../fonts/ebrimabd.ttf");
+}
+
+@font-face {
+    font-family: Gothic;
+    src: url("../fonts/GOTHIC.TTF");
+}
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.header {
+    background-color: #3398CC;
+    font-family: Gothic;
+    height: 112px;
+}
+
+.header-text {
+    color: white;
+    font-size: 48px;
+    padding: 27px 0 27px 20px;
+}
+
+
+.nav-pane {
+    background-color: #323334;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-pane-image {
+    margin-right: 25px;
+    flex-grow: 1;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-pane-image img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.nav-pane ul li {
+    font-family: Ebrima;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    display: inline;
+}
+
+.nav-pane ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+
+.news {
+    display: inline-block;
+    margin: 18px 48px 0px 48px;
+    padding: 12px;
+    border: solid 1px #D3D3D3;
+}
+
+.news-header {
+    font-size: 18px;
+}
+
+.news-points {
+    padding: 1px;
+    list-style-type: none;
+    margin: 0;
+}
+
+.news-points li {
+    font-size: 13px;
+    padding: 10px 10px 10px 5px;
+    color: #484848;
+    list-style-type: none;
+}
+
+.news-points li::before {
+    content: '-';
+}
+
+.text {
+    margin: 24px 500px 0 48px;
+}
+
+.text-header {
+    font-size: 18px;
+}
+
+.text-content {
+    font-size: 13px;
+    color: #484848;
+}
