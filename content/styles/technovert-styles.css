@@ -11,7 +11,7 @@
 body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 .header {
@@ -21,7 +21,7 @@ body {
 }
 
 .header-text {
-    color: white;
+    color: #FFFFFF;
     font-size: 48px;
     padding: 27px 0 27px 20px;
 }
@@ -47,15 +47,16 @@ body {
     vertical-align: middle;
 }
 
-.nav-pane ul li {
+.nav-pane-list li {
     font-family: Ebrima;
+    letter-spacing: 1px;
     color: white;
     padding: 10px;
     font-size: 14px;
     display: inline;
 }
 
-.nav-pane ul {
+.nav-pane-list {
     list-style-type: none;
     display: inline-block;
     padding: 10px;
@@ -90,15 +91,16 @@ body {
     content: '-';
 }
 
-.text {
-    margin: 24px 500px 0 48px;
+.info {
+    margin: 24px 0 0 48px;
+    width: 1000px;
 }
 
-.text-header {
+.info-header {
     font-size: 18px;
 }
 
-.text-content {
+.info-content {
     font-size: 13px;
     color: #484848;
 }

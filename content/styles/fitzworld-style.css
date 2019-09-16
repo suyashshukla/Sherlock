@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    color: #FFFFFF;
+    background: url("../bg.jpg");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: lightblue;
+}
+
+a:hover{
+    color: #FFFFFF;
+}
+
+.visited{
+    background-color:#466277;
+    border-radius: 5px;
+    color: white
+}
+
+.container{
+    margin: 0 220px 0 250px;
+}
+
+.top-bar-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar{
+    cursor: pointer;
+    padding: 5px;
+    background-color: #43608A;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-align: end;
+}
+
+.main-content{
+    margin-top: 30px;
+}
+
+.nav-pane{
+    margin : 0 5px 0 5px;
+    height: 65px;
+    display: flex;
+    border: 1px solid rgba(173, 216, 230, 0.5);
+    outline: rgba(22, 44, 68,0.8) solid 5px;
+    background-color: rgba(22, 44, 68, 0.8);
+    align-items: center;
+}
+
+.nav-pane image{
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.nav-pane-links{
+    display: inline-flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    list-style-type: none;
+    color: lightblue;
+    padding: 0;
+    margin: 0 30px 0 0;
+}
+
+
+.nav-pane-links li{
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline;
+}
+
+.nav-pane-links li:hover{
+    color: #FFFFFF;
+}
+
+.section-header{
+    letter-spacing: 5px;
+    background-color: rgba(0, 0, 0,0.25);
+    font-size: 48px;
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+    height: 180px;
+    color: #FFFFFF;
+}
+
+.data-tiles-container{
+    background-color: rgba(22, 44, 68, 0.8);
+    display: flex;
+    flex-direction: row;
+    border-color: rgba(173, 216, 230, 0.5);
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    margin: 5px 5px 0 5px;
+    outline: 5px rgba(22, 44, 68, 0.8) solid;
+}
+
+.data-tiles{
+    padding: 20px;
+}
+
+.data-tiles p{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    line-height:25px;
+}
+
+.data-tiles a{
+    color: lightblue;
+    font-weight: bold;
+}
+
+.copyright{
+    margin : 10px 0 5px 0;
+    padding: 10px;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: rgba(22, 44, 68, 0.9)
+}
+
+
+
+
