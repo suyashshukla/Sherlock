@@ -1,7 +1,7 @@
 body {
     margin: 0;
     color: #FFFFFF;
-    background: url("../bg.jpg");
+    background: url("../media/bg.jpg");
     background-size: cover;
     font-family: 'Source Sans Pro', Arial, sans-serif
 }

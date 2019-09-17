@@ -1,0 +1,40 @@
+body {
+    background-image: url("../media/background12.png");
+    background-size: cover;
+    margin: 0;
+}
+
+.head-pane {
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    border-width: 0 0 .5px 0;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.5);
+}
+
+.head-pane-data {
+    width: 960px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.head-pane-links {
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.head-pane-links li {
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 5px 10px 5px 10px;
+    display: inline;
+}
