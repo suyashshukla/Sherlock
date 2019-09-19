@@ -216,6 +216,24 @@ a:active {
     border-style: solid;
 }
 
+.description-pane-plates,
+.description-pane-photo {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-data-plates {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.description-data-photo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
 .description-pane-head {
     font-size: 22px;
     text-align: center;
