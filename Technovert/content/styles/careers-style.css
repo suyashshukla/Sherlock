@@ -1,0 +1,50 @@
+.content-careers {
+    margin: 24px 0 0 48px;
+    width: 980px;
+    font-family: Gothic;
+}
+
+.content-head {
+    font-size: 20px;
+}
+
+.content-sub-head {
+    font-size: 13px;
+    margin: 24px 0 48px 0;
+}
+
+.content-form {
+    width: 420px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.content-form div {
+    margin-bottom: 30px;
+}
+
+input {
+    display: inline-flex;
+    padding: 3px;
+    float: right;
+}
+
+.content-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.data {
+    margin-right: 20%;
+}
+
+.document {
+    padding: 5px;
+    background-color: white;
+}
+
+button {
+    padding: 5px 50px 5px 10px;
+}

@@ -26,7 +26,6 @@ body {
     padding: 27px 0 27px 20px;
 }
 
-
 .nav-pane {
     background-color: #323334;
     display: flex;
@@ -48,12 +47,21 @@ body {
 }
 
 .nav-pane-list li {
+    cursor: pointer;
     font-family: Ebrima;
     letter-spacing: 1px;
     color: white;
     padding: 10px;
     font-size: 14px;
     display: inline;
+}
+
+.nav-pane-list li:hover,
+.active {
+    background-color: orange;
+    border-width: 0 0 0 5px;
+    border-color: white;
+    border-style: solid;
 }
 
 .nav-pane-list {
@@ -103,4 +111,12 @@ body {
 .info-content {
     font-size: 13px;
     color: #484848;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+    text-decoration: none;
+    color: white;
 }
