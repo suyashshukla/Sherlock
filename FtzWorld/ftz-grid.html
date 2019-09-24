@@ -4,7 +4,10 @@
     <title>Task 2 : Services</title>
     <link rel="stylesheet" type="text/css" href="./content/styles/fitzworld-style.css">
     <link rel="stylesheet" type="text/css" href="./content/styles/ftzworld-services-style.css">
+    <link rel="stylesheet" type="text/css" href="./content/styles/ftzworl-grid.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,6 +20,7 @@
         </div>
 
         <div class="main-content">
+
             <div class="nav-pane">
                 <img src="./content/media/logo.png">
                 <ul class="nav-pane-links">
@@ -28,83 +32,103 @@
                 </ul>
             </div>
 
+            <div class="info-content-grid">
 
-
-            <div class="info-content">
+                <div class="info-search">
+                    <input type="search" placeholder="search" id="search-box">
+                </div>
 
                 <table class="info-grid">
                     <tr>
-                        <th><input type="checkbox"></th>
+                        <td><input type="checkbox" id="check-header"></td>
                         <th>NAME</th>
                         <th>SCORE</th>
                         <th>EMAIL</th>
-                        <th>&nbsp;&nbsp;</th>
+                        <th>ORGANIZATION</th>
                     </tr>
 
                     <tr>
-                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox" class="check-entry"></td>
                         <td>Vijay Prakash</td>
                         <td>34</td>
                         <td>vijay@technovert.com</td>
+                        <td>Keka HR</td>
                     </tr>
 
                     <tr>
-                        <td><input type="checkbox"></td>
+                        <td><input type="checkbox" class="check-entry"></td>
                         <td>Sashi Pagadala</td>
                         <td>21</td>
                         <td>sashi@technovert.com</td>
+                        <td>Technovert</td>
                     </tr>
 
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="checkbox" class="check-entry"></td>
+                        <td>Mark Zuckerberg</td>
+                        <td>28</td>
+                        <td>mark@facebook.com</td>
+                        <td>Facebook</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="checkbox" class="check-entry"></td>
+                        <td>Satya Nadella</td>
+                        <td>34</td>
+                        <td>satya@microsoft.com</td>
+                        <td>Microsoft</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="checkbox" class="check-entry"></td>
+                        <td>Jack Ma</td>
+                        <td>55</td>
+                        <td>jack@alibaba.com</td>
+                        <td>Alibaba Group</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="checkbox" class="check-entry"></td>
+                        <td>Dennis Richie</td>
+                        <td>78</td>
+                        <td>dennis@programming.com</td>
+                        <td>C Prog Lang</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="checkbox" class="check-entry"></td>
+                        <td>Sachin Bansal</td>
+                        <td>36</td>
+                        <td>sachin@flipkart.com</td>
+                        <td>Flipkart</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="checkbox" class="check-entry"></td>
+                        <td>Larry Page</td>
+                        <td>38</td>
+                        <td>larry@google.com</td>
+                        <td>Alphabet Inc.</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="checkbox" class="check-entry"></td>
+                        <td>Sunder Pichai</td>
+                        <td>45</td>
+                        <td>sunder@google.co.us</td>
+                        <td>Google LLC</td>
                     </tr>
                     <tr>
-                        <td><input type="checkbox"></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="checkbox" class="check-entry"></td>
+                        <td>Geoff Bezos</td>
+                        <td>52</td>
+                        <td>geoff@amazon.com</td>
+                        <td>Amazon Ltd.</td>
                     </tr>
 
                 </table>
+
+                <div class="info-grid-bottom">
+
+                    <button id="calculate">Calculate</button>
+                    <span id="average">Average : 0</span>
+                    <span id="max">Max : 0</span>
+
+                </div>
 
             </div>
 
