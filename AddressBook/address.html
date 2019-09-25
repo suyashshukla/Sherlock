@@ -1,0 +1,83 @@
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+
+    <title>Task 1</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+
+    <link href="./content/styles/address-styles.css" type="text/css" rel="stylesheet">
+
+    <link href="./content/media/favicon.png" type="image/png" rel="icon" sizes="24x24">
+
+    <script src="./script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-text">Address Book</div>
+    </div>
+
+    <div class="nav-pane">
+
+        <ul class="nav-pane-list">
+            <li id="active"><a href="./technovert.html">HOME</a></li>
+            <li id="add-item" onclick="openLightBox()">+ADD</li>
+        </ul>
+
+        <div class="nav-pane-image">
+            <img src="./content/media/blog-icon.png">
+        </div>
+
+    </div>
+
+    <div class="content">
+
+        <div class="content-header">
+            CONTACTS
+        </div>
+
+        <div class="content-list">
+
+            <ul class="content-list-data">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="content-data">
+
+        </div>
+
+        <div id="content-add-address">
+            <form class="add-form">
+                <label for="name">Name</label>
+                <input type="text">
+                <label for="email">Email</label>
+                <input type="email">
+                <label for="mobile">Mobile</label>
+                <input type="number">
+                <label for="landline">Landline</label>
+                <input type="landline">
+                <label for="website">Website</label>
+                <input type="text">
+                <label for="address">Address</label>
+                <textarea></textarea>
+                <button onclick="closLightBox()">ADD</button>
+            </form>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
