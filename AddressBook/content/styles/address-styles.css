@@ -74,13 +74,69 @@ a:hover {
     color: white;
 }
 
+.content-header {
+    font-family: Ebrima;
+    margin: 40px 0 0 20px;
+    font-weight: bold;
+}
+
+.content {
+    margin: 20px;
+    font-family: 'Gothic';
+    display: flex;
+    flex-direction: row;
+}
+
+.content-list {
+    border: 1px lightgray solid;
+    font-family: 'Gothic';
+    display: inline-block;
+    width: 385px;
+}
+
+.content-list-data {
+    list-style-type: none;
+    padding: 5px 10px;
+    margin: 0px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+#name {
+    font-size: 24px;
+}
+
+.content-data {
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    margin-left: 100px;
+    flex-grow: 1;
+}
+
 #content-add-address {
     display: none;
-    background-color: aliceblue;
+    background-color: white;
     position: absolute;
+    top: 0;
     padding: 25px;
     width: 680px;
     box-shadow: 0px 0px 50px grey;
+}
+
+#content-add-address input,
+#content-add-address textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.mobile {
+    margin-right: 10px;
+}
+
+.landline {
+    margin-left: 10px;
 }
 
 .add-form {
@@ -91,4 +147,74 @@ a:hover {
 .add-form button {
     background-color: green;
     color: white;
+    position: absolute;
+    right: 0;
+    padding: 10px 25px;
+    border: none;
+}
+
+.label {
+    margin-left: 30px;
+}
+
+#add-button-div {
+    position: relative;
+}
+
+.phone-numbers {
+    display: inline-flex;
+}
+
+.phone-numbers label,
+.phone-numbers input {
+    flex-grow: 1;
+}
+
+#content-first-line {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#content-name {
+    display: inline-block;
+    font-size: 30px;
+}
+
+#content-buttons {
+    display: inline-flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#content-edit img,
+#content-delete img {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+#content-edit,
+#content-delete {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content-line {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-phone-data {
+    margin-bottom: 20px;
+}
+
+.content-mobile-div,
+.content-landline-div {
+    display: flex;
+    flex-direction: row;
 }

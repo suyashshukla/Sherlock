@@ -1,16 +1,19 @@
 <html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
 
     <title>Task 1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
 
     <link href="./content/styles/address-styles.css" type="text/css" rel="stylesheet">
 
     <link href="./content/media/favicon.png" type="image/png" rel="icon" sizes="24x24">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="./script.js"></script>
 
@@ -37,44 +40,90 @@
 
     </div>
 
+    <div class="content-header">
+        CONTACTS
+    </div>
+
     <div class="content">
 
-        <div class="content-header">
-            CONTACTS
-        </div>
 
         <div class="content-list">
 
             <ul class="content-list-data">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li id="name">Suyash Shukla</li>
+                <li id="email">imsuyash97@gmail.com</li>
+                <li id="mobile">8319279074</li>
             </ul>
+
         </div>
 
         <div class="content-data">
 
-        </div>
+            <div id="content-address-info">
 
-        <div id="content-add-address">
-            <form class="add-form">
-                <label for="name">Name</label>
-                <input type="text">
-                <label for="email">Email</label>
-                <input type="email">
-                <label for="mobile">Mobile</label>
-                <input type="number">
-                <label for="landline">Landline</label>
-                <input type="landline">
-                <label for="website">Website</label>
-                <input type="text">
-                <label for="address">Address</label>
-                <textarea></textarea>
-                <button onclick="closLightBox()">ADD</button>
-            </form>
-        </div>
+                <div id="content-first-line">
+                    <div id="content-name">Praveen Battula</div>
+                    <div id="content-buttons">
+                        <div id="content-edit"><img src="./content/media/Edit-icon.png"><span>EDIT</span></div>
+                        <div id="content-delete"><img src="./content/media/delete2.png"><span>DELETE</span></div>
+                    </div>
+                </div>
 
+                <div class="content-line">
+                    <div class="content-email">
+                        Email : praveen@technovert.com
+                    </div>
+                </div>
+
+                <div class="content-phone-data">
+                    <div class="content-mobile-div">
+                        <label for="content-mobile">Mobile :&nbsp;</label>
+                        <div class="content-mobile">91 9292929292</div>
+                    </div>
+                    <div class="content-landline-div">
+                        <label for="content-landline">Landline :&nbsp;</label>
+                        <div class="content-landline">022 51515151</div>
+                    </div>
+                </div>
+
+                <div class="content-line">
+                    <label for="content-website">Website :&nbsp;</label>
+                    <div class="content-website">
+                        Website : www.technovert.com
+                    </div>
+                </div>
+
+                <div class="content-line">
+                    <label for="content-address">Address :&nbsp;</label>
+                    <div class="content-address">
+                        123 Now Here<br>Some Street<br> Madhapurm, Hyderabad
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-add-address">
+                <form class="add-form">
+                    <label for="name">Name</label>
+                    <input type="text">
+                    <label for="email">Email</label>
+                    <input type="email">
+                    <div class="phone-numbers">
+                        <label for="mobile">Mobile</label>
+                        <label for="landline" class="label">Landline</label>
+                    </div>
+                    <div class="phone-numbers">
+                        <input type="number" class="mobile">
+                        <input type="number" class="landline">
+                    </div>
+                    <label for="website">Website</label>
+                    <input type="text">
+                    <label for="address">Address</label>
+                    <textarea></textarea>
+                    <div id="add-button-div"><button onclick="closeLightBox()">Add</button></div>
+                </form>
+            </div>
+
+        </div>
 
     </div>
 
